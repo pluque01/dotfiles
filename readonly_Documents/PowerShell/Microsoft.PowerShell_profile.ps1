@@ -2,7 +2,16 @@
 $Env:KOMOREBI_CONFIG_HOME = 'C:\Users\pablo\.config\komorebi'
 
 # Zoxide (better cd) configuration
-Set-Alias cd z -Option AllScope
+del alias:cd
+function cd {
+    z $args
+}
+function cdi {
+    zi $args
+}
+function .. {
+    z ..
+}
 
 # Eza (better ls) configuration
 del alias:ls
