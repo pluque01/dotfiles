@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.yaml",
+  "theme": {
+    "palette": "Catppuccin",
+    "name": "Macchiato",
+    "bar_accent": "Mauve",
+    "unfocused_border": "Surface2",
+  },
+  "animation": {
+    "enabled": true,
+    "duration": 100,
+  },
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "alt_focus_hack": true,
+  "mouse_follows_focus": false,
+  "default_workspace_padding": 10,
+  "default_container_padding": 5,
+  "border_width": 6,
+  "border_offset": -1,
+  "border": true,
+  "border_style": "System",
+  "stackbar": {
+    "height": 40,
+    "mode": "OnStack",
+    "tabs": {
+      "width": 300
+    }
+  },
+  "float_rules": [
+    {
+      "kind": "Exe",
+      "id": "zebar.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "global_work_area_offset": {
+    "bottom": 40,
+    "left": 0,
+    "right": 0,
+    "top": 40
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "web",
+          "layout": "BSP"
+        },
+        {
+          "name": "term",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "doc",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "comm",
+          "layout": "VerticalStack",
+          "workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "discord.exe"
+            }
+          ]
+        },
+        {
+          "name": "extra",
+          "layout": "Rows"
+        }
+      ]
+    }
+  ]
+}
