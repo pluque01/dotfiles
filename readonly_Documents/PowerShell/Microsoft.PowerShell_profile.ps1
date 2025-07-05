@@ -20,6 +20,5 @@ function ls {
 }
 
 Invoke-Expression (&starship init powershell)
-Import-Module Terminal-Icons
 Set-PSReadLineOption -PredictionViewStyle ListView
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
