@@ -7,7 +7,7 @@ Set-Alias cd z -Option AllScope
 # Eza (better ls) configuration
 del alias:ls
 function ls {
-    eza -al --icons=always --color=always --group-directories-first
+    eza -al --icons=always --color=always --group-directories-first $args
 }
 
 Invoke-Expression (&starship init powershell)
